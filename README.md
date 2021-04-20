@@ -14,13 +14,14 @@
 
 ##### Specs
 
-|            | Class                                | Record     | Struct      |
-| :---       | :---                                 | :---       | :---        |
-| Type       | Reference type                       | Value type | Value type  |
-| Store      | Memory address of the allocated data | Data value | Data value  |
-| Allocation | Heap                                 | Stack      | Stack       |
-| Comparison | Memory address                       | Values     | Unsupported |
+|            | Class                                | Record                     | Struct      |
+| :---       | :---                                 | :---                       | :---        |
+| Type       | Reference type                       | Reference type<sup>1</sup> | Value type  |
+| Store      | Memory address of the allocated data | Data value                 | Data value  |
+| Allocation | Heap                                 | Stack                      | Stack       |
+| Comparison | Memory address                       | Values                     | Unsupported |
 
+* **1**: The record is _Reference type_ but the comparison works as _Value type_
 
 ##### Support
 

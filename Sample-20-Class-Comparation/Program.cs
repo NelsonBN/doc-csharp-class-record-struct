@@ -29,11 +29,16 @@ namespace Sample_20_Class_Comparation
 
             Console.WriteLine($"cDriver1 ({cDriver1.GetHashCode()}) == cDriver2 ({cDriver2.GetHashCode()}) : {cDriver1 == cDriver2}"); // The result is false because the memory addresses is not the same
             Console.WriteLine($"cDriver3 ({cDriver3.GetHashCode()}) == cDriver4 ({cDriver4.GetHashCode()}) : {cDriver3 == cDriver4}"); // The result is true because the memory addresses is the same
-
+            
             Console.WriteLine();
 
             Console.WriteLine($"cDriver1 ({cDriver1.GetHashCode()}) Equals cDriver2 ({cDriver2.GetHashCode()}) : {cDriver1.Equals(cDriver2)}");
             Console.WriteLine($"cDriver3 ({cDriver3.GetHashCode()}) Equals cDriver4 ({cDriver4.GetHashCode()}) : {cDriver3.Equals(cDriver4)}");
+
+            Console.WriteLine();
+
+            Console.WriteLine($"cDriver1 ({cDriver1.GetHashCode()}) ReferenceEquals cDriver2 ({cDriver2.GetHashCode()}) : {System.Object.ReferenceEquals(cDriver1, cDriver2)}");
+            Console.WriteLine($"cDriver3 ({cDriver3.GetHashCode()}) ReferenceEquals cDriver4 ({cDriver4.GetHashCode()}) : {System.Object.ReferenceEquals(cDriver3, cDriver4)}");
         }
     }
 }

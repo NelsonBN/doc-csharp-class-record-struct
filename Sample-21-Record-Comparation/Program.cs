@@ -32,6 +32,9 @@ namespace Sample_21_Record_Comparation
             Console.WriteLine($"rDriver1 Equals rDriver2 : {rDriver1.Equals(rDriver2)}");
             Console.WriteLine($"rDriver1 Equals rDriver3 : {rDriver1.Equals(rDriver3)}");
 
+            Console.WriteLine($"rDriver1 ReferenceEquals rDriver2 : {System.Object.ReferenceEquals(rDriver1, rDriver2)}");
+            Console.WriteLine($"rDriver1 ReferenceEquals rDriver3 : {System.Object.ReferenceEquals(rDriver1, rDriver3)}");
+
             Console.WriteLine();
 
         }
