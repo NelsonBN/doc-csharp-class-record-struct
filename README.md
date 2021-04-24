@@ -1,4 +1,4 @@
-## DEMO Classs vs. Record vs. Struct
+# DEMO Classs vs. Record vs. Struct
 
 #### Technologies implemented:
 
