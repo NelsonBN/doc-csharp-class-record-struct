@@ -14,24 +14,26 @@
 
 ##### Specs
 
-|            | Class                                | Record                     | Struct      |
-| :---       | :---                                 | :---                       | :---        |
-| Type       | Reference type                       | Reference type<sup>1</sup> | Value type  |
-| Store      | Memory address of the allocated data | Data value                 | Data value  |
-| Allocation | Heap                                 | Stack                      | Stack       |
-| Comparison | Memory address                       | Values                     | Unsupported |
+|            | Class                                | Record                     | Struct          |
+| :---       | :---                                 | :---                       | :---            |
+| Type       | Reference type                       | Reference type<sup>1</sup> | Value type      |
+| Store      | Memory address of the allocated data | Data value                 | Data value      |
+| Allocation | Heap                                 | Stack                      | Stack           |
+| Comparison | Memory address                       | Values                     | Unsupported     |
+| HashCode   | Based in instance reference          | Based in values            | Based in values |
 
 * **1**: The record is _Reference type_ but the comparison works as _Value type_
 
 ##### Support
 
-|                 | Class   | Record  | Struct  |
-| :---            | :---:   | :---:   | :---:   |
-| Inheritance     | &check; | &check; | &cross; |
-| Constructs      | &check; | &check; | &check; |
-| Distructors     | &check; | &check; | &cross; |
-| With expression | &cross; | &check; | &cross; |
-| Comparison      | &check; | &check; | &cross; |
+|                     | Class   | Record  | Struct  |
+| :---                | :---:   | :---:   | :---:   |
+| Inheritance         | &check; | &check; | &cross; |
+| Constructs          | &check; | &check; | &check; |
+| Distructors         | &check; | &check; | &cross; |
+| With expression     | &cross; | &check; | &cross; |
+| Comparison "=="     | &check; | &check; | &cross; |
+| Comparison "Equals" | &check; | &check; | &check; |
 
 
 ### How can I use it?

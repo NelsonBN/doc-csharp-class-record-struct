@@ -29,6 +29,12 @@ namespace Sample_10_Print
             Console.WriteLine($"Class > cDriver : {cDriver}");
             Console.WriteLine($"Record > rDriver : {rDriver}"); // The records is printed like a json object
             Console.WriteLine($"Struct > sDriver : {sDriver}");
+
+            Console.WriteLine();
+
+            Console.WriteLine($"Class > cDriver > HashCode : {cDriver.GetHashCode()}");
+            Console.WriteLine($"Record > rDriver > HashCode : {rDriver.GetHashCode()}");
+            Console.WriteLine($"Struct > sDriver > HashCode : {sDriver.GetHashCode()}");
         }
     }
 }
