@@ -1,30 +1,28 @@
-# DEMO Classs vs. Record vs. Struct
+# Classs vs. Record vs. Struct
 
-#### Technologies implemented:
-
+### Technologies implemented:
 - [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 
-#### Tools
+### Tools
 - [Visual Studio Code](https://code.visualstudio.com/download)
 
----
 
-### Documentation
+## Documentation
 
-##### Specs
+### Specs
 
 |            | Class                                | Record                     | Struct          |
 | :---       | :---                                 | :---                       | :---            |
 | Type       | Reference type                       | Reference type<sup>1</sup> | Value type      |
 | Store      | Memory address of the allocated data | Data value                 | Data value      |
-| Allocation | Heap                                 | Stack                      | Stack           |
+| Allocation | Heap                                 | Heap                       | Stack           |
 | Comparison | Memory address                       | Values                     | Unsupported     |
 | HashCode   | Based in instance reference          | Based in values            | Based in values |
 
 * **1**: The record is _Reference type_ but the comparison works as _Value type_
 
-##### Support
+### Support
 
 |                     | Class   | Record  | Struct  |
 | :---                | :---:   | :---:   | :---:   |
@@ -81,15 +79,15 @@ public struct SDriver
   - OS x64 (64-bit): 4MB
 - The **StackOverflowException** is thrown when the execution stack overflows
 
-#### Reference links
+## Reference links
 * [Stack vs. Heap](https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/)
+* [Records C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record)
 
----
 
-#### Contribution
+## Contribution
 
 *Help me to help others*
 
-#### LICENSE
+## LICENSE
 
 [MIT](https://github.com/NelsonBN/Demo-Class-vs-Record-vs-Struct/blob/main/LICENSE)
