@@ -90,4 +90,4 @@ public struct SDriver
 
 ## LICENSE
 
-[MIT](https://github.com/NelsonBN/Demo-Class-vs-Record-vs-Struct/blob/main/LICENSE)
+[MIT](https://github.com/NelsonBN/doc-csharp-class-record-struct/blob/main/LICENSE)
