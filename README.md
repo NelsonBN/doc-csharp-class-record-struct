@@ -1,4 +1,4 @@
-# Classs vs. Record vs. Struct
+# Class vs. Record vs. Struct
 
 ### Technologies implemented:
 - [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
