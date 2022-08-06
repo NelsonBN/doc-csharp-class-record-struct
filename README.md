@@ -104,7 +104,7 @@ public record struct RSDriver
 ![Benchmarks nested objects](/media/benchmarks-nested-objects.png "Benchmarks nested objects")
 
 ### Comparation
-![Benchmarks comparation](/media/benchmarks-nested-objects.png "Benchmarks comparation")
+![Benchmarks comparation](/media/benchmarks-comparation.png "Benchmarks comparation")
 
 ## LICENSE
 
