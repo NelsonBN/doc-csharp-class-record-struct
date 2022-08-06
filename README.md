@@ -1,16 +1,16 @@
 # Class vs. Record vs. Struct
 
-### Technologies implemented:
-- [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
+## Technologies implemented:
+- [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
 
 
-### Tools
+## Tools
 - [Visual Studio Code](https://code.visualstudio.com/download)
 
 
 ## Documentation
 
-### Specs
+## Specs
 
 |            | Class                                | Record                     | Struct          |
 | :---       | :---                                 | :---                       | :---            |
@@ -41,7 +41,7 @@
 ```csharp
 public class CDriver
 {
-    public string Name { get; set; } 
+    public string Name { get; set; }
     public string Team { get; set; }
     public uint BirthYear { get; set; }
 }
@@ -72,21 +72,39 @@ public struct SDriver
 }
 ```
 
+##### Struct
+```csharp
+public record struct RSDriver
+{
+    public string Name { get; set; }
+    public string Team { get; set; }
+    public uint BirthYear { get; set; }
+}
+```
+
 ### Notes
 - Record is only available in **.net5 (c# 9)**
+- Record Struct is only available in **.net6 (c# 10)**
 - The stack has a fixed memory size:
   - OS x86 (32-bit): 1MB
   - OS x64 (64-bit): 4MB
 - The **StackOverflowException** is thrown when the execution stack overflows
+
+
 
 ## Reference links
 * [Stack vs. Heap](https://www.c-sharpcorner.com/article/stack-vs-heap-memory-c-sharp/)
 * [Records C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record)
 
 
-## Contribution
 
-*Help me to help others*
+## Benchmarks
+
+### With nested objects
+![Benchmarks nested objects](/media/benchmarks-nested-objects.png "Benchmarks nested objects")
+
+### Comparation
+![Benchmarks comparation](/media/benchmarks-nested-objects.png "Benchmarks comparation")
 
 ## LICENSE
 
